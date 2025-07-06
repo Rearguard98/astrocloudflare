@@ -1,11 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import logopmii from '../assets/images/logo-pmii.png';
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2><a href="/"><Image src={logopmii} height="100" width="100" alt="Logo PMII" /></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
